@@ -1,0 +1,46 @@
+[theme]
+primaryColor = "#2d7a5f"
+backgroundColor = "#f5f0e8"
+secondaryBackgroundColor = "#fffdf9"
+textColor = "#1a1410"
+font = "sans serif"
+```
+5. Click **"Commit changes"** → **"Commit changes"**
+
+---
+
+## Step 2 — Get your FREE Groq API Key
+
+While that saves, open a new tab:
+
+1. Go to **console.groq.com**
+2. Sign up free (use Google login)
+3. Click **"API Keys"** → **"Create API Key"**
+4. Name it `diabecare` → Copy the key (starts with `gsk_...`)
+5. **Save it somewhere** — you'll need it in the next step!
+
+---
+
+## Step 3 — Deploy on Streamlit Cloud 🚀
+
+1. Go to **share.streamlit.io**
+2. Sign in with your **GitHub account** (same LoveleenGaur account)
+3. Click **"New app"**
+4. Fill in:
+   - **Repository:** `LoveleenGaur/diabecare`
+   - **Branch:** `main`
+   - **Main file path:** `app.py`
+5. Click **"Advanced settings"**
+6. Under **Secrets**, paste:
+```
+GROQ_API_KEY = "gsk_paste_your_key_here"
+```
+7. Click **"Deploy!"**
+
+---
+
+## ⏳ Wait 2-3 minutes...
+
+Streamlit will install all packages and launch your app. You'll get a live URL like:
+```
+https://loveleen-diabecare.streamlit.app
